@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profilePicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fullName": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "socialLink": {
+      "type": "string"
+    },
+    "memberType": {
+      "type": "enumeration",
+      "enum": [
+        "TEAM",
+        "BOARD"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}
