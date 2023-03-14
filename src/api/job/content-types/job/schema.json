@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "theJob": {
+      "type": "richtext",
+      "required": true
+    },
+    "responsibilities": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "aboutYou": {
+      "type": "richtext",
+      "required": true
+    },
+    "whatSuccessLooksLike": {
+      "type": "richtext",
+      "required": true
+    },
+    "requirements": {
+      "type": "richtext",
+      "required": true
+    },
+    "aboutWeb3WorkingGroup": {
+      "type": "richtext",
+      "default": "Web3 Working Group is a 501(c)(3) nonprofit organization. Our purpose is to educate about web3 infrastructure and how it's distinct but adjacent to the cryptocurrency industry. We educate regulators and the public at-large about how web3 will permanently restore user control of cyberspace, replacing centralized control with transparent and permissionless protocols through incentives aligned with users.",
+      "required": true
+    },
+    "whatToExpectDuringTheInterviewProcess": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -41,6 +41,10 @@
       "type": "richtext",
       "required": true,
       "minLength": 1
+    },
+    "displayOrder": {
+      "type": "integer",
+      "default": 1
     }
   }
 }
