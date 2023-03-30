@@ -49,6 +49,12 @@
     "whatToExpectDuringTheInterviewProcess": {
       "type": "richtext",
       "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job-tag.job-tag",
+      "mappedBy": "tag_names"
     }
   }
 }

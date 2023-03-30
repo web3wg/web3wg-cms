@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learn_videos",
+  "info": {
+    "singularName": "learn-video",
+    "pluralName": "learn-videos",
+    "displayName": "Learn-video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "web2Link": {
+      "type": "string",
+      "required": false
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true
+    },
+    "web3Link": {
+      "type": "string",
+      "required": false
+    },
+    "displayOrder": {
+      "type": "integer"
+    }
+  }
+}

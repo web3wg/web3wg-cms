@@ -39,12 +39,14 @@
     },
     "description": {
       "type": "richtext",
-      "required": true,
-      "minLength": 1
+      "required": false
     },
     "displayOrder": {
       "type": "integer",
       "default": 1
+    },
+    "position": {
+      "type": "string"
     }
   }
 }

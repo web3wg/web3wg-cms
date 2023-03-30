@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_tags",
+  "info": {
+    "singularName": "job-tag",
+    "pluralName": "job-tags",
+    "displayName": "Job-tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "tag_names": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::job.job",
+      "inversedBy": "tags"
+    }
+  }
+}
